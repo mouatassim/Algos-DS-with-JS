@@ -32,7 +32,7 @@ class LinkedList {
         newNode.next = this.head;
         this.head = newNode;
         }
-        this.#length++;
+        return this.#length++;
     }
 
     deleteFirst() {
@@ -99,6 +99,7 @@ class LinkedList {
     print() {
         console.log(this.display());
     }
+
 }
 
 module.exports = { LinkedList, Node };

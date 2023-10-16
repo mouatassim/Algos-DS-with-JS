@@ -1,17 +1,24 @@
+const { kthNodeFromTheEnd } = require("./kthFromTheEnd");
 const { LinkedList, Node } = require("./LinkedListClass");
+const { reversList } = require("./reversList");
 
-const list = new LinkedList();
-list.addFirst(new Node(5));
+let list = new LinkedList();
+list.addLast(new Node(5));
 list.addFirst(new Node(7));
 list.addFirst(new Node(12));
-list.addLast(new Node(23));
-list.addFirst(new Node(27));
-list.deleteFirst()
-list.deleteLast()
+// list.addFirst(new Node(27));
+// list.addFirst(new Node(28));
+// list.addFirst(new Node(51));
+
 
 list.print();
+// reversList(list);
+// list.print();
+
+const k = kthNodeFromTheEnd(list,4)
+console.log(k);
 
 
 
-console.log(list.containes(89));
-console.log(list.size());
+
+
